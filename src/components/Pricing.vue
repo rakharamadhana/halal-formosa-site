@@ -19,10 +19,6 @@
           <p class="text-slate-600 mb-6">Start exploring Taiwan with essential tools</p>
           <p class="text-4xl font-bold mb-6">NT$0</p>
 
-          <button class="w-full px-6 py-2 border-2 border-[#d97b1a] text-[#d97b1a] rounded-lg font-semibold hover:bg-orange-50 transition mb-8">
-            Get Started
-          </button>
-
           <ul class="space-y-4 text-slate-600">
 
             <li class="flex items-center gap-2">
@@ -65,10 +61,6 @@
           <p class="text-4xl font-bold mb-6">
             NT$49<span class="text-lg">/month</span>
           </p>
-
-          <button class="w-full px-6 py-2 bg-white text-[#d97b1a] rounded-lg font-semibold hover:bg-orange-50 transition mb-8">
-            Upgrade to Pro
-          </button>
 
           <ul class="space-y-4">
             <li class="flex items-center gap-2">

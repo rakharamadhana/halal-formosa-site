@@ -1,14 +1,15 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-b from-slate-50 to-white">
-    <!-- Always visible -->
+  <div class="flex flex-col min-h-screen">
+
+    <!-- Header (stays at top) -->
     <HeaderSection />
 
-    <!-- Page-specific content -->
-    <main>
+    <!-- Main content (expands to fill available space) -->
+    <main class="flex-1">
       <router-view />
     </main>
 
-    <!-- Always visible -->
+    <!-- Footer (sticks to bottom when content is short) -->
     <FooterSection />
   </div>
 </template>
@@ -17,9 +18,3 @@
 import HeaderSection from "@/components/Header.vue"
 import FooterSection from "@/components/Footer.vue"
 </script>
-
-<style scoped>
-* {
-  scroll-behavior: smooth;
-}
-</style>

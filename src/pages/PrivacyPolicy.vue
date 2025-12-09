@@ -128,7 +128,7 @@ const sections = [
   },
   {
     title: "Article 14 – Contact",
-    text: `For privacy inquiries: <strong>halalformosa@gmail.com</strong>`
+    text: `For privacy inquiries: <strong>halalformosa[@]gmail.com</strong>`
   }
 ]
 </script>

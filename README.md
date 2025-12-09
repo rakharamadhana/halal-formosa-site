@@ -82,7 +82,7 @@ Push to `main` branch → Vercel auto-builds and deploys.
 
 ## 📬 Contact
 
-📧 Email: **halalformosa@gmail.com**  
+📧 Email: **halalformosa[@]gmail.com**  
 📷 Instagram: **@halalformosa**
 
 ---

@@ -23,16 +23,6 @@
 
       <ul class="space-y-4 text-slate-700 mb-10">
         <li>
-          📧 Email:
-          <a
-              href="mailto:halalformosa@gmail.com"
-              class="text-[#d97b1a] hover:underline"
-          >
-            halalformosa@gmail.com
-          </a>
-        </li>
-
-        <li>
           📷 Instagram:
           <a
               href="https://www.instagram.com/halalformosa/"
