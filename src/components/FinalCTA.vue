@@ -1,6 +1,4 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <!-- Final CTA Section -->
@@ -21,7 +19,7 @@
           iOS App — Coming Soon
         </button>
 
-        <!-- ANDROID BUTTON (Active Link) -->
+        <!-- ANDROID BUTTON -->
         <a
             href="https://play.google.com/store/apps/details?id=com.rcreative.halalformosa"
             target="_blank"
@@ -31,11 +29,19 @@
           Download Android App
         </a>
 
+        <!-- WEB VERSION BUTTON -->
+        <a
+            href="https://halalformosa.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-8 py-3 bg-white text-[#d97b1a] rounded-full font-semibold hover:bg-orange-50 transition inline-flex items-center justify-center"
+        >
+          Open Web App
+        </a>
+
       </div>
     </div>
   </section>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

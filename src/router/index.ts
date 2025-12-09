@@ -9,6 +9,7 @@ import Contact from "@/pages/Contact.vue"
 
 const router = createRouter({
     history: createWebHistory(),
+
     routes: [
         {
             path: "/",
@@ -23,14 +24,14 @@ const router = createRouter({
         },
     ],
 
-    // 👇 THIS PART FIXES THE SCROLL ISSUE
-    scrollBehavior(to, from, savedPosition) {
-        // 1️⃣ If coming from browser back/forward → restore old position
+    // Smooth + reliable scroll behavior
+    scrollBehavior(to, _from, savedPosition) {
+        // Restore scroll when using browser forward/back
         if (savedPosition) {
             return savedPosition
         }
 
-        // 2️⃣ If the URL has a hash (#) → scroll to that section smoothly
+        // If navigating to a hash (#features), scroll smoothly
         if (to.hash) {
             return {
                 el: to.hash,
@@ -38,8 +39,8 @@ const router = createRouter({
             }
         }
 
-        // 3️⃣ Default: ALWAYS scroll to top when navigating pages
-        return { top: 0, behavior: "smooth" }
+        // Default: scroll to top on every page navigation
+        return { top: 0 }
     },
 })
 
