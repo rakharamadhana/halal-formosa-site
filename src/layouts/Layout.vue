@@ -1,20 +1,22 @@
 <template>
-  <div class="flex flex-col min-h-screen">
+  <!-- Vercel Analytics -->
+  <Analytics />
 
-    <!-- Header (stays at top) -->
+  <!-- Shared layout wrapper -->
+  <div class="min-h-screen flex flex-col">
     <HeaderSection />
 
-    <!-- Main content (expands to fill available space) -->
+    <!-- Page content -->
     <main class="flex-1">
       <router-view />
     </main>
 
-    <!-- Footer (sticks to bottom when content is short) -->
     <FooterSection />
   </div>
 </template>
 
 <script setup>
-import HeaderSection from "@/components/Header.vue"
-import FooterSection from "@/components/Footer.vue"
+import { Analytics } from "@vercel/analytics/vue";
+import HeaderSection from "@/components/Header.vue";
+import FooterSection from "@/components/Footer.vue";
 </script>
