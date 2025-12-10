@@ -155,7 +155,7 @@ const sections = [
   },
   {
     title: "Article 12 – Contact",
-    text: "Email: halalformosa@gmail.com"
+    text: "Email: halalformosa[@]gmail.com"
   }
 ]
 </script>

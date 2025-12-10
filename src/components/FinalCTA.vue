@@ -9,37 +9,50 @@
         Join thousands of Muslim travelers discovering Taiwan with confidence
       </p>
 
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
 
-        <!-- iOS BUTTON (Disabled / Coming Soon) -->
-        <button
-            disabled
-            class="px-8 py-3 bg-white/40 text-white/80 rounded-full font-semibold cursor-not-allowed border border-white/30"
-        >
-          iOS App — Coming Soon
-        </button>
+        <!-- APP STORE (COMING SOON) -->
+        <div class="relative w-40">
+          <img
+              src="/app-store.png"
+              alt="App Store"
+              class="w-full opacity-40"
+          />
+          <div class="absolute inset-0 bg-white/50 backdrop-blur-xs flex items-center justify-center rounded-lg">
+            <span class="text-[#843f00] font-semibold text-sm">iOS Coming Soon</span>
+          </div>
+        </div>
 
-        <!-- ANDROID BUTTON -->
+        <!-- GOOGLE PLAY (LIVE DOWNLOAD) -->
         <a
             href="https://play.google.com/store/apps/details?id=com.rcreative.halalformosa"
             target="_blank"
             rel="noopener noreferrer"
-            class="px-8 py-3 border-2 border-white text-white rounded-full font-semibold hover:bg-[#bf6c16] transition inline-flex items-center justify-center"
+            class="w-40 block"
         >
-          Download Android App
+          <img
+              src="/google-play.png"
+              alt="Download on Google Play"
+              class="w-full cursor-pointer hover:opacity-80 transition"
+          />
         </a>
 
-        <!-- WEB VERSION BUTTON -->
+        <!-- WEB VERSION BADGE -->
         <a
             href="https://halalformosa.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
-            class="px-8 py-3 bg-white text-[#d97b1a] rounded-full font-semibold hover:bg-orange-50 transition inline-flex items-center justify-center"
+            class="w-40 block"
         >
-          Open Web App
+          <img
+              src="/web-badge.png"
+              alt="Open Web App"
+              class="w-full cursor-pointer hover:opacity-80 transition"
+          />
         </a>
 
       </div>
+
     </div>
   </section>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <section class="max-w-5xl mx-auto px-6 py-24">
     <h1 class="text-4xl font-bold text-slate-900 text-center mb-6">
-      About Halal Formosa
+      About Us
     </h1>
 
     <p class="text-slate-600 text-lg leading-relaxed text-center max-w-3xl mx-auto mb-12">

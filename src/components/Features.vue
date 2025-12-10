@@ -1,49 +1,71 @@
 <template>
-  <!-- Features Section -->
-  <section id="features" class="bg-slate-900 text-white py-20">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-4xl font-bold mb-4 text-center">Powerful Features</h2>
-      <p class="text-slate-300 text-center mb-16 max-w-2xl mx-auto">
+  <section id="features" class="bg-slate-900 text-white py-24">
+
+    <div class="max-w-4xl mx-auto text-center mb-20">
+      <h2 class="text-4xl md:text-5xl font-bold">Core Features</h2>
+      <p class="text-slate-300 mt-4">
         Designed to make every Muslim's experience in Taiwan easier and stress-free
       </p>
+    </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-slate-800 rounded-xl p-6 hover:bg-slate-700 transition">
-          <div class="text-4xl mb-4">📱</div>
-          <h3 class="text-xl font-bold mb-2">Ingredient Scanner</h3>
-          <p class="text-slate-300 text-sm">
-            Instantly detect questionable, suspicious or halal-friendly ingredients
-          </p>
-        </div>
+    <div class="max-w-6xl mx-auto space-y-28 px-6">
 
-        <div class="bg-slate-800 rounded-xl p-6 hover:bg-slate-700 transition">
-          <div class="text-4xl mb-4">🗺️</div>
-          <h3 class="text-xl font-bold mb-2">Halal Map</h3>
-          <p class="text-slate-300 text-sm">
-            View halal restaurants, shops and mosques across Taiwan
-          </p>
-        </div>
-
-        <div class="bg-slate-800 rounded-xl p-6 hover:bg-slate-700 transition">
-          <div class="text-4xl mb-4">✈️</div>
-          <h3 class="text-xl font-bold mb-2">Travel Guide</h3>
-          <p class="text-slate-300 text-sm">
-            Prayer times, routes and travel planning specially for Muslims
-          </p>
-        </div>
-
-        <div class="bg-slate-800 rounded-xl p-6 hover:bg-slate-700 transition">
-          <div class="text-4xl mb-4">👥</div>
-          <h3 class="text-xl font-bold mb-2">Community Driven</h3>
-          <p class="text-slate-300 text-sm">
-            Crowdsourced halal information updated by real users
+      <!-- Feature 1 -->
+      <div class="flex flex-col md:flex-row items-center gap-6 md:gap-12">
+        <img
+            src="/features/feature-1.png"
+            class="w-full max-w-[500px] mx-auto drop-shadow-xl"
+        />
+        <div class="text-center md:text-left md:ml-4">
+          <h3 class="text-3xl font-semibold mb-3">Ingredient Analysis</h3>
+          <p class="text-slate-300 text-lg">
+            Scan and detect questionable, suspicious, or halal-friendly ingredients instantly.
           </p>
         </div>
       </div>
+
+      <!-- Feature 2 (reverse) -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-12">
+        <img
+            src="/features/feature-2.png"
+            class="w-full max-w-[500px] mx-auto drop-shadow-xl"
+        />
+        <div class="text-center md:text-right md:mr-4">
+          <h3 class="text-3xl font-semibold mb-3">Product Search</h3>
+          <p class="text-slate-300 text-lg">
+            Discover thousands of Muslim-friendly products across Taiwan.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="flex flex-col md:flex-row items-center gap-6 md:gap-12">
+        <img
+            src="/features/feature-3.png"
+            class="w-full max-w-[500px] mx-auto drop-shadow-xl"
+        />
+        <div class="text-center md:text-left md:ml-4">
+          <h3 class="text-3xl font-semibold mb-3">Halal Maps</h3>
+          <p class="text-slate-300 text-lg">
+            Explore halal restaurants, shops, and mosques anywhere in Taiwan.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature 4 (reverse) -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-12">
+        <img
+            src="/features/feature-4.png"
+            class="w-full max-w-[500px] mx-auto drop-shadow-xl"
+        />
+        <div class="text-center md:text-right md:mr-4">
+          <h3 class="text-3xl font-semibold mb-3">Community Driven</h3>
+          <p class="text-slate-300 text-lg">
+            Powered by real users contributing halal insights every day.
+          </p>
+        </div>
+      </div>
+
     </div>
   </section>
 </template>
-
-<script setup>
-import Feature from "./parts/FeatureCard.vue"
-</script>

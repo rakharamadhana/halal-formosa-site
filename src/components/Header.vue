@@ -62,7 +62,7 @@ const goToHomeSection = async (sectionId) => {
           @click="goToHomeSection('download')"
           class="px-6 py-2 bg-[#d97b1a] text-white rounded-lg font-medium hover:bg-[#bf6c16] transition"
       >
-        Get Started
+        Download
       </button>
 
 

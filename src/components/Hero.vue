@@ -1,64 +1,63 @@
-<script setup>
-import { useRouter } from "vue-router"
-import logo from '@/assets/logo.png?w=80&format=webp';
-const router = useRouter()
-
-// Reuse the same smooth scroll method used in Header.vue
-const goToSection = async (sectionId) => {
-  if (router.currentRoute.value.path !== "/") {
-    await router.push("/")
-  }
-
-  requestAnimationFrame(() => {
-    const el = document.getElementById(sectionId)
-    el?.scrollIntoView({ behavior: "smooth" })
-  })
-}
-
-const goToContact = () => {
-  router.push("/contact")
-}
-</script>
-
 <template>
   <section class="max-w-7xl mx-auto px-6 py-20 md:py-32">
     <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div>
+
+      <!-- LEFT SIDE -->
+      <div class="text-center md:text-left">
+
         <h1 class="text-5xl md:text-6xl font-bold text-slate-900 leading-tight mb-6">
           <span class="text-[#d97b1a]">Halal is Easy</span> in Taiwan
         </h1>
 
         <p class="text-xl text-slate-600 mb-8 leading-relaxed">
-          Discover halal-friendly food, scan ingredients, explore halal maps, and travel with confidence in Taiwan.
+          Discover halal-friendly food, scan ingredients, explore halal maps,
+          and travel with confidence in Taiwan.
         </p>
 
-        <div class="flex flex-col sm:flex-row gap-4">
+        <!-- STORE BADGES -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
 
-          <!-- DOWNLOAD BUTTON (SCROLL TO #download) -->
-          <button
-              @click="goToSection('download')"
-              class="px-8 py-3 bg-[#d97b1a] text-white rounded-full font-semibold hover:bg-[#bf6c16] transition"
-          >
-            Download App
-          </button>
+          <!-- APP STORE DISABLED -->
+          <div class="relative w-40 mx-auto md:mx-0">
+            <img src="/app-store.png" class="w-full opacity-80" />
+            <div class="absolute inset-0 bg-white/60 backdrop-blur-xs flex items-center justify-center rounded-lg">
+              <span class="text-slate-600 font-semibold text-sm">iOS Coming Soon</span>
+            </div>
+          </div>
 
-          <!-- LEARN MORE -> Contact Page -->
-          <button
-              @click="goToContact"
-              class="px-8 py-3 border-2 border-slate-300 text-slate-900 rounded-full font-semibold hover:border-[#d97b1a] hover:text-[#d97b1a] transition"
+          <!-- GOOGLE PLAY -->
+          <a
+              href="https://play.google.com/store/apps/details?id=com.rcreative.halalformosa"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-40 block mx-auto md:mx-0"
           >
-            Contact Us
-          </button>
+            <img src="/google-play.png" class="w-full cursor-pointer hover:opacity-80 transition" />
+          </a>
+
+          <!-- WEB BADGE -->
+          <a
+              href="https://halalformosa.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-40 block mx-auto md:mx-0"
+          >
+            <img src="/web-badge.png" class="w-full cursor-pointer hover:opacity-80 transition" />
+          </a>
 
         </div>
+
       </div>
 
-      <div class="flex flex-col items-center justify-center">
-        <img :src="logo" width="300" height="300" alt="Halal Formosa Logo" class="w-40 h-40 object-contain drop-shadow-lg mb-4" />
-        <p class="text-slate-600 font-medium">Halal Ecosystem for Muslim Travelers</p>
+      <!-- RIGHT SIDE: MOCKUP -->
+      <div class="flex justify-center md:justify-end">
+        <img
+            src="/app-mockup.png"
+            alt="Halal Formosa App Mockup"
+            class="max-w-[320px] md:max-w-full drop-shadow-xl"
+        />
       </div>
+
     </div>
   </section>
 </template>
-
-<style scoped></style>
