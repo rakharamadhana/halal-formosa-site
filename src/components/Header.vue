@@ -4,7 +4,6 @@ import logo from '@/assets/logo.png?w=80&format=webp';
 
 const router = useRouter()
 
-// Scroll or go to home then scroll
 const goToHomeSection = async (sectionId) => {
   if (router.currentRoute.value.path !== "/") {
     await router.push("/")

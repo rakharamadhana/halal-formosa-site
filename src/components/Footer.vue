@@ -1,11 +1,10 @@
-<script setup lang="ts">
+<script setup>
 import { useRouter } from "vue-router"
 import logo from '@/assets/logo.png?w=80&format=webp';
 
 const router = useRouter()
 
-// Go to home and scroll
-const goToHomeSection = async (sectionId: string) => {
+const goToHomeSection = async (sectionId) => {
   if (router.currentRoute.value.path !== "/") {
     await router.push("/")
   }
