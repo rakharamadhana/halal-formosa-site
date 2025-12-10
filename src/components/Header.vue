@@ -1,5 +1,6 @@
 <script setup>
 import { useRouter } from "vue-router"
+import logo from '@/assets/logo.png?w=80&format=webp';
 
 const router = useRouter()
 
@@ -22,7 +23,13 @@ const goToHomeSection = async (sectionId) => {
 
       <!-- Logo -->
       <div class="flex items-center gap-2 cursor-pointer" @click="router.push('/')">
-        <img src="/logo.png?w=80&format=webp" width="80" height="80" alt="Halal Formosa Logo" class="w-10 h-10 rounded-lg object-contain" />
+        <img
+            :src="logo"
+            width="80"
+            height="80"
+            alt="Halal Formosa Logo"
+            class="w-10 h-10 rounded-lg object-contain"
+        />
         <span class="text-xl font-bold text-slate-900">Halal Formosa</span>
       </div>
 
