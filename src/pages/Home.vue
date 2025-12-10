@@ -38,7 +38,7 @@
 
     <!-- FINAL CTA -->
     <div
-        data-aos="zoom-in"
+        data-aos="fade-right"
         data-aos-delay="450"
         data-aos-anchor-placement="top-bottom"
     >

@@ -29,7 +29,7 @@ const goToHomeSection = async (sectionId) => {
             <img :src="logo" width="80" height="80" alt="Halal Formosa Logo" class="w-10 h-10 rounded-lg shadow-sm object-contain" />
             <span class="text-xl font-bold text-white">Halal Formosa</span>
           </div>
-          <p class="text-sm">Taiwan's first Muslim-friendly ecosystem</p>
+          <p class="text-sm">Taiwan's first Halal and Muslim-friendly ecosystem</p>
         </div>
 
         <!-- Product Links -->
