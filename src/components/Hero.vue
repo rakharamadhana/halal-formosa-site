@@ -52,7 +52,7 @@
       <!-- RIGHT SIDE: MOCKUP -->
       <div class="flex justify-center md:justify-end">
         <img
-            src="/app-mockup.png"
+            src="/hero-1.png"
             alt="Halal Formosa App Mockup"
             class="max-w-[320px] md:max-w-full drop-shadow-xl"
         />

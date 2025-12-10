@@ -11,7 +11,10 @@
     <div class="max-w-6xl mx-auto space-y-28 px-6">
 
       <!-- Feature 1 -->
-      <div class="flex flex-col md:flex-row items-center gap-6 md:gap-12">
+      <div
+          class="flex flex-col md:flex-row items-center gap-6 md:gap-12"
+          data-aos="fade-right"
+      >
         <img
             src="/features/feature-1.png"
             class="w-full max-w-[500px] mx-auto drop-shadow-xl"
@@ -24,8 +27,12 @@
         </div>
       </div>
 
-      <!-- Feature 2 (reverse) -->
-      <div class="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-12">
+      <!-- Feature 2 -->
+      <div
+          class="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-12"
+          data-aos="fade-left"
+          data-aos-delay="150"
+      >
         <img
             src="/features/feature-2.png"
             class="w-full max-w-[500px] mx-auto drop-shadow-xl"
@@ -39,7 +46,11 @@
       </div>
 
       <!-- Feature 3 -->
-      <div class="flex flex-col md:flex-row items-center gap-6 md:gap-12">
+      <div
+          class="flex flex-col md:flex-row items-center gap-6 md:gap-12"
+          data-aos="fade-right"
+          data-aos-delay="300"
+      >
         <img
             src="/features/feature-3.png"
             class="w-full max-w-[500px] mx-auto drop-shadow-xl"
@@ -52,8 +63,12 @@
         </div>
       </div>
 
-      <!-- Feature 4 (reverse) -->
-      <div class="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-12">
+      <!-- Feature 4 -->
+      <div
+          class="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-12"
+          data-aos="fade-left"
+          data-aos-delay="450"
+      >
         <img
             src="/features/feature-4.png"
             class="w-full max-w-[500px] mx-auto drop-shadow-xl"
