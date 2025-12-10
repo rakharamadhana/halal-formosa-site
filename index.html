@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8" />
 
-    <!-- Favicon / Icons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/logo.png" />
-    <link rel="apple-touch-icon" href="/logo.png" />
-    <link rel="preload" as="image" href="/logo.png" />
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- Mobile UI Theme Color -->
+    <!-- MOBILE BROWSER COLOR -->
     <meta name="theme-color" content="#d97b1a" />
 
-    <!-- SEO Meta -->
+    <!-- BASIC SEO -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Halal Formosa — Halal Map & Ingredient Scanner in Taiwan</title>
 
@@ -24,19 +25,26 @@
 
     <meta name="author" content="Halal Formosa" />
 
-    <!-- Canonical URL -->
+    <!-- CANONICAL -->
     <link rel="canonical" href="https://halalformosa.com" />
 
-    <!-- Open Graph -->
+    <!-- OPEN GRAPH -->
     <meta property="og:title" content="Halal Formosa — Halal Map & Ingredient Scanner in Taiwan" />
     <meta property="og:description" content="Find halal food, scan ingredients, explore halal maps, and live Muslim-friendly in Taiwan." />
-    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:image" content="https://halalformosa.com/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:url" content="https://halalformosa.com" />
+    <meta property="og:site_name" content="Halal Formosa" />
     <meta property="og:type" content="website" />
 
-    <!-- Schema.org Organization -->
+    <!-- TWITTER PREVIEW (optional but recommended) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Halal Formosa — Halal Map & Ingredient Scanner in Taiwan" />
+    <meta name="twitter:description" content="Find halal food, scan ingredients, explore halal maps, and live Muslim-friendly in Taiwan." />
+    <meta name="twitter:image" content="https://halalformosa.com/og-image.png" />
+
+    <!-- ORGANIZATION SCHEMA -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -46,12 +54,14 @@
             "logo": "https://halalformosa.com/logo.png",
             "description": "A halal-friendly ecosystem for Muslims in Taiwan — ingredient scanner, halal map, and travel support.",
             "sameAs": [
-                "https://www.instagram.com/halalformosa/"
+                "https://www.instagram.com/halalformosa/",
+                "https://play.google.com/store/apps/details?id=com.rcreative.halalformosa",
+                "https://halalformosa.com"
             ]
         }
     </script>
 
-    <!-- Schema.org Mobile App -->
+    <!-- ANDROID APP SCHEMA -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -63,11 +73,26 @@
         }
     </script>
 
+    <!-- WEBSITE SCHEMA (enhances branding + favicon recognition) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://halalformosa.com",
+            "name": "Halal Formosa",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Halal Formosa",
+                "logo": "https://halalformosa.com/logo.png"
+            }
+        }
+    </script>
 </head>
 
 <body>
 <div id="app"></div>
 <script type="module" src="/src/main.ts"></script>
+
 <noscript>
     <strong>This website works best with JavaScript enabled.</strong>
 </noscript>
