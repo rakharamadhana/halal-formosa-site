@@ -22,7 +22,7 @@ const goToHomeSection = async (sectionId) => {
 
       <!-- Logo -->
       <div class="flex items-center gap-2 cursor-pointer" @click="router.push('/')">
-        <img src="/logo.png" class="w-10 h-10 rounded-lg object-contain" />
+        <img src="/logo.png" width="500" height="500" alt="Halal Formosa Logo" class="w-10 h-10 rounded-lg object-contain" />
         <span class="text-xl font-bold text-slate-900">Halal Formosa</span>
       </div>
 

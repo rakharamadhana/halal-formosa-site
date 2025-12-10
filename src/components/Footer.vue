@@ -25,7 +25,7 @@ const goToHomeSection = async (sectionId: string) => {
         <!-- Logo + Description -->
         <div>
           <div class="flex items-center gap-2 mb-4 cursor-pointer" @click="router.push('/')">
-            <img src="/logo.png" alt="Halal Formosa Logo" class="w-10 h-10 rounded-lg shadow-sm object-contain" />
+            <img src="/logo.png" width="500" height="500" alt="Halal Formosa Logo" class="w-10 h-10 rounded-lg shadow-sm object-contain" />
             <span class="text-xl font-bold text-white">Halal Formosa</span>
           </div>
           <p class="text-sm">Taiwan's first Muslim-friendly ecosystem</p>
@@ -57,7 +57,7 @@ const goToHomeSection = async (sectionId: string) => {
             <!-- Download (scroll to CTA) -->
             <li>
               <button
-                  @click="goToHomeSection('contact')"
+                  @click="goToHomeSection('download')"
                   class="hover:text-orange-400 transition text-left">
                 Download
               </button>
