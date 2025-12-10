@@ -54,7 +54,7 @@ const goToContact = () => {
       </div>
 
       <div class="flex flex-col items-center justify-center">
-        <img src="/logo.png" width="500" height="500" alt="Halal Formosa Logo" class="w-40 h-40 object-contain drop-shadow-lg mb-4" />
+        <img src="/logo.png?w=300&format=webp" width="300" height="300" alt="Halal Formosa Logo" class="w-40 h-40 object-contain drop-shadow-lg mb-4" />
         <p class="text-slate-600 font-medium">Halal Ecosystem for Muslim Travelers</p>
       </div>
     </div>
