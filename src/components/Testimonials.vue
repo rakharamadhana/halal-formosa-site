@@ -44,13 +44,13 @@ const testimonials = [
     name: "Fitricia",
     role: "Indonesian Resident in Taiwan",
     message:
-        "Alhamdulillah, it's now so much easier to find halal products in Taiwan — just scan and check! Sometimes we think a product is safe, but after scanning, it turns out to contain doubtful (syubhat) ingredients 😭. Thank you, Halal Formosa!"
+        "Alhamdulillah, it's now so much easier to find halal products in Taiwan, just scan and check! Sometimes we think a product is safe, but after scanning, it turns out to contain doubtful (syubhat) ingredients 😭. Thank you, Halal Formosa!"
   },
   {
     name: "Rarasanti Rania",
     role: "PhD Student in Taiwan",
     message:
-        "Alhamdulillah, thank you Halal Formosa for bringing a refreshing and much-needed solution for Muslims in Taiwan. The halal ingredient checker makes everything so convenient, and I really love the user interface — especially the product search. Finding halal products or halal-friendly places is now so much more efficient."
+        "Alhamdulillah, thank you Halal Formosa for bringing a refreshing and much-needed solution for Muslims in Taiwan. The halal ingredient checker makes everything so convenient, and I really love the user interface, especially the product search. Finding halal products or halal-friendly places is now so much more efficient."
   },
 ];
 </script>
