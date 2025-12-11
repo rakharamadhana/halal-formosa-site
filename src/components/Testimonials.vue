@@ -52,6 +52,12 @@ const testimonials = [
     message:
         "Alhamdulillah, thank you Halal Formosa for bringing a refreshing and much-needed solution for Muslims in Taiwan. The halal ingredient checker makes everything so convenient, and I really love the user interface, especially the product search. Finding halal products or halal-friendly places is now so much more efficient."
   },
+  {
+    name: "Ogi Dani Sakarov",
+    role: "PhD Student in Taiwan and Director of IMA Taiwan",
+    message:
+        "Halal Formosa is an excellent tool for Muslims in Taiwan. Its halal scan function is reliable, the halal restaurant listings are comprehensive, and prayer locations are clearly mapped. I highly recommend this app to anyone seeking trustworthy halal guidance in Taiwan."
+  },
 ];
 </script>
 
