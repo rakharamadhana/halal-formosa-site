@@ -58,6 +58,12 @@ const testimonials = [
     message:
         "Halal Formosa is an excellent tool for Muslims in Taiwan. Its halal scan function is reliable, the halal restaurant listings are comprehensive, and prayer locations are clearly mapped. I highly recommend this app to anyone seeking trustworthy halal guidance in Taiwan."
   },
+  {
+    name: "dr. Herlin Ajeng Nurrahma, M.Biomed",
+    role: "PhD Candidate in Taipei",
+    message:
+        "I really love this app. Halal Formosa is a very helpful application, especially for Muslims living in a minority setting like here, in Taiwan. It makes choosing halal food much easier and more reassuring, particularly when shopping or eating out. The information provided is clear and practical, which truly supports daily decision-making. I am also very proud that this application is developed by an Indonesian creator. It reflects both cultural awareness and genuine care for the Muslim community. Highly recommended.❤️"
+  },
 ];
 </script>
 
