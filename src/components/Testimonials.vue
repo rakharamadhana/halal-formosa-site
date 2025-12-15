@@ -69,9 +69,6 @@ const updateCardsPerPage = () => {
   else cardsPerPage.value = 1
 }
 
-const showLeftArrow = computed(() => totalPages.value > 1)
-const showRightArrow = computed(() => totalPages.value > 1)
-
 const carousel = ref<HTMLElement | null>(null)
 const activePage = ref(0)
 
@@ -90,15 +87,6 @@ const goNext = () => {
           : activePage.value + 1
   scrollToPage(next)
 }
-
-const goPrev = () => {
-  const prev =
-      activePage.value <= 0
-          ? totalPages.value - 1
-          : activePage.value - 1
-  scrollToPage(prev)
-}
-
 
 const updateActivePage = () => {
   if (!carousel.value) return
@@ -173,7 +161,7 @@ onMounted(() => {
   nextTick(() => {
     if (!carousel.value) return
 
-    carousel.value.addEventListener("scroll", updateActivePage())
+    carousel.value.addEventListener("scroll", updateActivePage)
 
     // Hover interactions
     carousel.value.addEventListener("mouseenter", startHoverSlide)
