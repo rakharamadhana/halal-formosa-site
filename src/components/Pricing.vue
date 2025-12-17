@@ -59,7 +59,7 @@
           <p class="text-orange-50 mb-6">For users who want a complete halal experience</p>
 
           <p class="text-4xl font-bold mb-6">
-            NT$49<span class="text-lg">/month</span>
+            NT$99<span class="text-lg">/month</span>
           </p>
 
           <ul class="space-y-4">
