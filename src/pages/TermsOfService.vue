@@ -33,8 +33,10 @@
       </section>
 
       <p class="text-slate-500 italic mt-12 text-center">
-        Effective Date: August 2025
+        Effective Date: August 2025<br />
+        Last Updated: January 2026
       </p>
+
       <p class="text-slate-600 text-center mt-4">
         Service Name: <strong>Halal Formosa</strong><br/>
         Provider: <strong>R Creative</strong>
@@ -188,7 +190,7 @@ const sections = [
     list: [
       "Features and services may be modified or discontinued without notice.",
       "Service availability is not guaranteed.",
-      "Updated Terms become effective upon release."
+      "Updated Terms become effective upon release and are reflected by the 'Last Updated' date shown in this document."
     ]
   },
 

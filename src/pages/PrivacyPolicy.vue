@@ -28,8 +28,10 @@
       </section>
 
       <p class="text-slate-500 italic mt-12 text-center">
-        Effective Date: August 2025
+        Effective Date: August 2025<br />
+        Last Updated: January 2026
       </p>
+
 
     </div>
   </div>
@@ -125,7 +127,7 @@ const sections = [
   },
   {
     title: "Article 13 – Changes to this Policy",
-    text: "Updates to this Privacy Policy will be published within the application and take effect immediately."
+    text: "Updates to this Privacy Policy will be published within the application and reflected by the 'Last Updated' date shown above. Changes take effect immediately."
   },
   {
     title: "Article 14 – Contact",
