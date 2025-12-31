@@ -39,96 +39,97 @@
 const sections = [
   {
     title: "Article 1 – Definition of Personal Information",
-    text: `“Personal information” refers to identifiable data such as your Google account email address,
-           display name, and profile image collected during authentication. Other app usage information is stored in anonymized form.`
+    text: "“Personal information” refers to identifiable data such as your Google account email address, display name, and profile image collected during authentication. Other application usage information may be stored in anonymized or aggregated form."
   },
   {
     title: "Article 2 – Methods of Collecting Personal Information",
     list: [
-      "When you sign in using Google, we collect your email, display name, and profile image.",
-      "We collect anonymized logs and interaction data for security, improvement, and research.",
-      "Map usage collects approximate device location to show nearby halal facilities.",
-      "Donation-related details are stored only as transaction metadata; <strong>no card data</strong> is stored."
+      "When you sign in using Google, we collect your email address, display name, and profile image.",
+      "We collect identifiable and anonymized activity and interaction logs associated with user accounts for monitoring, maintenance, security, analysis, and service improvement purposes.",
+      "Map usage collects approximate device location to display nearby halal-friendly locations.",
+      "Donation-related information is stored only as transaction metadata; no payment card data is stored by Halal Formosa."
     ]
   },
   {
     title: "Article 3 – Purpose of Use",
     list: [
-      "To authenticate users and provide app features",
-      "To offer location-based Explore / Map services",
-      "To improve features using anonymized analytics",
-      "To detect abuse or security issues",
-      "To maintain donation transparency",
-      "To personalize preferences like language settings"
+      "To authenticate users and enable access to Service features",
+      "To provide location-based Explore and Map functionality",
+      "To monitor system performance and improve the Service",
+      "To detect, prevent, and address abuse, misuse, or security issues",
+      "To maintain transparency and records related to voluntary support contributions",
+      "To store user preferences such as language and basic application settings"
     ]
   },
   {
     title: "Article 4 – Advertising and Ad Tracking",
     list: [
-      "The app displays <strong>Google AdMob</strong> banner advertisements.",
-      "Ads may be personalized or non-personalized depending on Google account settings.",
-      "We do <strong>not</strong> collect extra data for ads.",
-      "AdMob may process device info, interaction data, and approximate location.",
-      `See <a class='text-[#d97b1a] underline' href='https://policies.google.com/technologies/ads' target='_blank'>Google’s policy</a>.`
+      "The Service displays Google AdMob banner advertisements in the free version only.",
+      "Advertisements are used to support server maintenance and ongoing development of Halal Formosa.",
+      "Users subscribed to Halal Formosa Pro will not see advertisements.",
+      "Ads may be personalized or non-personalized depending on settings managed by Google.",
+      "Halal Formosa does not collect additional personal data specifically for advertising purposes.",
+      "Google AdMob may process device information, interaction data, and approximate location in accordance with its own policies.",
+      "<a class='text-[#d97b1a] underline' href='https://policies.google.com/technologies/ads' target='_blank'>Google’s Advertising Policy</a>"
     ]
   },
   {
     title: "Article 5 – Changes to Purpose of Use",
-    text: "Any changes will be communicated through in-app notices or updates."
+    text: "Any changes to the purpose of data use will be communicated through in-app notices, updates to this Privacy Policy, or publication on the official Halal Formosa website. Continued use of the Service after such updates constitutes acceptance of the revised purposes."
   },
   {
     title: "Article 6 – Retention Period",
     list: [
-      "Personal data is retained while accounts remain active.",
-      "Deletion requests are processed within <strong>30 days</strong>.",
-      "Reports are anonymized after 30 days and stored indefinitely.",
-      "Donation records may be anonymized for accounting."
+      "Personal data is retained while user accounts remain active.",
+      "Account deletion requests are processed within 30 days.",
+      "User-submitted reports are anonymized after 30 days and may be retained indefinitely.",
+      "Donation records may be anonymized and retained for accounting and transparency purposes."
     ]
   },
   {
     title: "Article 7 – Third-Party Disclosure",
     list: [
-      "We do not sell or share data with third parties for marketing.",
-      "Authentication is provided through Google.",
-      "Payments are handled via <strong>bobaboba.me (AnyoneLab)</strong>."
+      "Halal Formosa does not sell or share personal data with third parties for marketing purposes.",
+      "User authentication is provided through Google services.",
+      "Voluntary support contributions are processed via bobaboba.me (AnyoneLab).",
+      "Payments for Halal Formosa Pro subscriptions are processed by the respective app store platform, and Halal Formosa does not store or process payment card information."
     ]
   },
   {
     title: "Article 8 – User Rights: Access, Correction, and Deletion",
     list: [
-      "Users may request data access or deletion.",
-      "Login information must be updated through Google.",
-      "Account deletion takes up to 30 days.",
-      "Reports remain stored in anonymized form."
+      "Users may request access to, correction of, or deletion of their personal data by contacting support[@]halalformosa.com.",
+      "Login information associated with Google accounts must be managed directly through Google account settings.",
+      "Account deletion requests are processed within 30 days.",
+      "User-submitted reports remain stored in anonymized form after account deletion."
     ]
   },
   {
     title: "Article 9 – Data Suspension and Misuse",
-    text: "Users may contact support if they believe their data has been misused."
+    text: "Users who believe their personal data has been misused or improperly handled may contact the Halal Formosa team at support[@]halalformosa.com for review and assistance."
   },
   {
     title: "Article 10 – Cookie and Local Storage",
     list: [
-      "No browser cookies are used.",
-      "Local storage is used for language and non-personal preferences."
+      "The Service does not use browser cookies.",
+      "Local storage may be used to store non-personal preferences and technical data (such as language settings or cached configurations) to load services faster and improve performance."
     ]
   },
   {
     title: "Article 11 – Security Measures",
-    text: "We use Supabase authentication and HTTPS encryption with restricted access to personal data."
+    text: "Halal Formosa uses Supabase authentication, HTTPS encryption, and restricted access controls to protect personal data."
   },
   {
     title: "Article 12 – International and Religious Considerations",
-    text: `Disputes are first approached through Shariah principles of fairness, then governed by Taiwan law under
-           Taipei District Court jurisdiction.`
+    text: "Disputes are first approached through Shariah principles of fairness. If unresolved, matters are governed by Taiwan law under the jurisdiction of the Taipei District Court."
   },
   {
     title: "Article 13 – Changes to this Policy",
-    text: "Updates will be published in-app and take effect immediately."
+    text: "Updates to this Privacy Policy will be published within the application and take effect immediately."
   },
   {
     title: "Article 14 – Contact",
-    text: `For privacy inquiries: halalformosa[@]gmail.com`
+    text: "For privacy-related inquiries or requests, please contact: support[@]halalformosa.com"
   }
 ]
 </script>
