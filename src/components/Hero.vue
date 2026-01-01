@@ -37,7 +37,7 @@
 
           <!-- WEB BADGE -->
           <a
-              href="https://halalformosa.vercel.app"
+              href="https://app.halalformosa.com"
               target="_blank"
               rel="noopener noreferrer"
               class="w-40 block mx-auto md:mx-0"
