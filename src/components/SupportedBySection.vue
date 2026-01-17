@@ -6,9 +6,7 @@
   >
     <div class="max-w-6xl mx-auto px-6 text-center">
       <!-- Title -->
-      <h2 class="text-3xl font-bold text-gray-900">
-        Supported By
-      </h2>
+      <h2 class="text-4xl font-bold text-center mb-4">Supported By</h2>
 
       <!-- Subtitle -->
       <p class="mt-3 text-gray-600 max-w-2xl mx-auto">
