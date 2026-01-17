@@ -95,12 +95,6 @@ const goNext = () => {
   scrollToPage(next)
 }
 
-const loopedTestimonials = computed(() => [
-  ...testimonials,
-  ...testimonials,
-])
-
-
 const updateActivePage = () => {
   if (!carousel.value) return
 
