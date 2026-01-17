@@ -15,17 +15,24 @@
       <div
           v-for="item in testimonials"
           :key="item.name"
-          class="min-w-[90%] md:min-w-[45%] lg:min-w-[32%] bg-white border border-slate-200 rounded-xl p-8 snap-center shadow-sm hover:shadow-lg transition"
+          class="min-w-[90%] md:min-w-[45%] lg:min-w-[32%]
+         bg-white border border-slate-200 rounded-xl
+         p-8 snap-center shadow-sm hover:shadow-lg transition
+         h-[420px] flex flex-col"
       >
-        <!-- Stars -->
+
+      <!-- Stars -->
         <div class="flex gap-1 mb-4">
           <span v-for="i in 5" :key="i" class="text-[#d97b1a]">★</span>
         </div>
 
         <!-- Message -->
-        <p class="text-slate-600 mb-6 leading-relaxed">
-          "{{ item.message }}"
-        </p>
+        <div class="flex-1 overflow-y-auto pr-2 mb-6">
+          <p class="text-slate-600 leading-relaxed">
+            "{{ item.message }}"
+          </p>
+        </div>
+
 
         <!-- User Info -->
         <div class="flex items-center gap-3">
@@ -87,6 +94,12 @@ const goNext = () => {
           : activePage.value + 1
   scrollToPage(next)
 }
+
+const loopedTestimonials = computed(() => [
+  ...testimonials,
+  ...testimonials,
+])
+
 
 const updateActivePage = () => {
   if (!carousel.value) return
@@ -194,4 +207,13 @@ onUnmounted(() => {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.flex-1::-webkit-scrollbar {
+  width: 4px;
+}
+.flex-1::-webkit-scrollbar-thumb {
+  background-color: #e5e7eb;
+  border-radius: 4px;
+}
+
 </style>

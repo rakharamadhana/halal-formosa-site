@@ -18,6 +18,16 @@
       <FeaturesSection />
     </div>
 
+    <!-- SUPPORTED BY -->
+    <div
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-anchor-placement="top-bottom"
+    >
+      <SupportedBySection />
+    </div>
+
+
     <!-- PRICING -->
     <div
         data-aos="fade-right"
@@ -54,6 +64,7 @@
 <script setup>
 import HeroSection from "@/components/Hero.vue"
 import FeaturesSection from "@/components/Features.vue"
+import SupportedBySection from "@/components/SupportedBySection.vue"
 import TestimonialsSection from "@/components/Testimonials.vue"
 import PricingSection from "@/components/Pricing.vue"
 import FinalCTASection from "@/components/FinalCTA.vue"
