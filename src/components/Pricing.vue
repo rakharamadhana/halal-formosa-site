@@ -1,94 +1,96 @@
 <script setup lang="ts">
-
+import PricingCard from '@/components/PricingCard.vue'
 </script>
 
 <template>
-  <!-- Pricing Section -->
   <section id="pricing" class="bg-slate-50 py-20">
     <div class="max-w-7xl mx-auto px-6">
       <h2 class="text-4xl font-bold text-center mb-4">Pricing</h2>
-      <p class="text-slate-600 text-center mb-16 max-w-2xl mx-auto">
+      <p class="text-slate-600 text-center mb-16">
         Choose the perfect plan for your needs
       </p>
 
-      <div class="grid md:grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
 
-        <!-- FREE PLAN -->
-        <div class="bg-white rounded-xl p-8 border border-slate-200">
-          <h3 class="text-2xl font-bold mb-2">Free</h3>
-          <p class="text-slate-600 mb-6">Start exploring Taiwan with essential tools</p>
-          <p class="text-4xl font-bold mb-6">NT$0</p>
+        <!-- Free -->
+        <PricingCard
+            title="Free"
+            subtitle="Start exploring Taiwan"
+            price="NT$0"
+            :features="[
+            'Halal Map Access',
+            'Basic Ingredient Scanning',
+            '10 Scans Daily'
+          ]"
+            :disabled-features="[
+            'Unlimited Scans',
+            'Smart “For You” Feed',
+            'No Ads'
+          ]"
+            variant="free"
+        />
 
-          <ul class="space-y-4 text-slate-600">
+        <!-- Weekly -->
+        <PricingCard
+            title="Pro Weekly"
+            subtitle="Short trips & visitors"
+            price="NT$39"
+            period="week"
+            :features="[
+            'Everything in Free',
+            'Smart “For You” Feed',
+            'No Ads',
+            'Unlimited Scans',
+            'Priority Support 24/7'
+          ]"
 
-            <li class="flex items-center gap-2">
-              <span class="text-[#d97b1a] font-bold">✓</span>
-              Halal Map Access
-            </li>
+            variant="weekly"
+        />
 
-            <li class="flex items-center gap-2">
-              <span class="text-[#d97b1a] font-bold">✓</span>
-              Basic Ingredient Scanning
-            </li>
+        <!-- Monthly -->
+        <PricingCard
+            title="Pro Monthly"
+            subtitle="Most flexible for frequent visits"
+            price="NT$99"
+            period="month"
+            :features="[
+            'Everything in Free',
+            'Smart “For You” Feed',
+            'No Ads',
+            'Unlimited Scans',
+            'Priority Support 24/7'
+          ]"
+            variant="monthly"
+        />
 
-            <li class="flex items-center gap-2">
-              <span class="text-[#d97b1a] font-bold">✓</span>
-              10 Scans Daily
-            </li>
+        <!-- Annual (Best Value) -->
+        <PricingCard
+            title="Pro Annual"
+            subtitle="Best for Muslims living in Taiwan"
+            price="NT$699"
+            period="year"
+            badge="Best Value"
+            highlight
+            :features="[
+    'Everything in Free',
+    'Smart “For You” Feed',
+    'No Ads',
+    'Unlimited Scans',
+    'Priority Support 24/7'
+  ]"
 
-            <li class="flex items-center gap-2">
-              <span class="text-[#d97b1a] font-bold">✕</span>
-              Unlimited Scans
-            </li>
-
-            <li class="flex items-center gap-2">
-              <span class="text-[#d97b1a] font-bold">✕</span>
-              No Ads
-            </li>
-
-          </ul>
-        </div>
-
-        <!-- PRO PLAN -->
-        <div class="bg-[#d97b1a] rounded-xl p-8 text-white relative border-2 border-[#d97b1a]">
-          <div class="absolute top-4 right-4 bg-white text-[#d97b1a] px-3 py-1 rounded-full text-sm font-semibold">
-            Best Value
-          </div>
-
-          <h3 class="text-2xl font-bold mb-2">Pro</h3>
-          <p class="text-orange-50 mb-6">For users who want a complete halal experience</p>
-
-          <p class="text-4xl font-bold mb-6">
-            NT$99<span class="text-lg">/month</span>
+            variant="annual"
+        >
+          <p class="text-sm text-orange-100 text-center mt-4">
+            Save over <strong>40%</strong> compared to monthly · Less than NT$2 per day
           </p>
-
-          <ul class="space-y-4">
-            <li class="flex items-center gap-2">
-              <span class="font-bold">✓</span>
-              Everything in Free
-            </li>
-
-            <li class="flex items-center gap-2">
-              <span class="font-bold">✓</span>
-              No Ads
-            </li>
-
-            <li class="flex items-center gap-2">
-              <span class="font-bold">✓</span>
-              Unlimited Scans
-            </li>
-
-            <li class="flex items-center gap-2">
-              <span class="font-bold">✓</span>
-              Other Pro Features (coming soon)
-            </li>
-          </ul>
-        </div>
+        </PricingCard>
 
       </div>
     </div>
   </section>
 </template>
+
 
 <style scoped>
 </style>

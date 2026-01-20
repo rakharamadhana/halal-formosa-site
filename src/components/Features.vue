@@ -13,7 +13,7 @@
       <!-- Feature 1 -->
       <div
           class="flex flex-col md:flex-row items-center gap-6 md:gap-12"
-          data-aos="fade-right"
+          data-aos="zoom-in"
       >
         <img
             src="/features/feature-1.png"
@@ -30,7 +30,7 @@
       <!-- Feature 2 -->
       <div
           class="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-12"
-          data-aos="fade-left"
+          data-aos="zoom-in"
           data-aos-delay="150"
       >
         <img
@@ -48,7 +48,7 @@
       <!-- Feature 3 -->
       <div
           class="flex flex-col md:flex-row items-center gap-6 md:gap-12"
-          data-aos="fade-right"
+          data-aos="zoom-in"
           data-aos-delay="300"
       >
         <img
@@ -66,7 +66,7 @@
       <!-- Feature 4 -->
       <div
           class="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-12"
-          data-aos="fade-left"
+          data-aos="zoom-in"
           data-aos-delay="450"
       >
         <img

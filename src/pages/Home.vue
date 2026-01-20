@@ -30,7 +30,7 @@
 
     <!-- PRICING -->
     <div
-        data-aos="fade-right"
+        data-aos="fade-up"
         data-aos-delay="250"
         data-aos-anchor-placement="top-bottom"
     >
@@ -39,7 +39,7 @@
 
     <!-- TESTIMONIALS -->
     <div
-        data-aos="fade-left"
+        data-aos="fade-up"
         data-aos-delay="350"
         data-aos-anchor-placement="top-bottom"
     >
@@ -48,7 +48,7 @@
 
     <!-- FINAL CTA -->
     <div
-        data-aos="fade-right"
+        data-aos="fade-up"
         data-aos-delay="450"
         data-aos-anchor-placement="top-bottom"
     >
