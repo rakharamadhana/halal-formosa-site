@@ -69,7 +69,7 @@ const supporters = [
     logo: "/supporters/kdei-taipei.jpeg",
     scale: "scale-90",
     url: "https://www.kdei-taipei.org",
-    active: false
+    active: true
   },
   {
     name: "International Madani Association Taiwan",
