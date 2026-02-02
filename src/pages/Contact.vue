@@ -52,6 +52,48 @@
         </a>
       </div>
 
+      <div class="mb-10">
+        <h3 class="text-xl font-bold text-slate-900 mb-3">
+          Office Information
+        </h3>
+
+        <p class="text-slate-700 leading-relaxed">
+          Halal Formosa operates in collaboration with its publishing and operational partner,
+          YiQi Global Consulting (藝啟文創行銷有限公司).
+        </p>
+
+        <p class="text-slate-700 leading-relaxed mt-2">
+          <strong>Office Address:</strong><br />
+
+          YiQi Global Consulting Office<br />
+          <a
+              href="https://maps.app.goo.gl/Nh7HTgh2soifnXtv7"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-[#d97b1a] transition underline-offset-2 hover:underline"
+          >
+            114064 臺北市內湖區洲子街12號2樓 (R.O.C.)
+          </a>
+        </p>
+
+
+        <p class="text-slate-700 leading-relaxed mt-2">
+          <strong>Office Phone:</strong><br />
+          <a
+              href="tel:+886287515503"
+              class="hover:text-[#d97b1a] transition"
+          >
+            +886 2 8751 5503
+          </a>
+        </p>
+
+        <p class="text-slate-500 text-sm mt-2">
+          Visits by appointment only.
+        </p>
+      </div>
+
+
+
 
       <!-- Contact Form -->
       <div>

@@ -83,30 +83,60 @@ const goToHomeSection = async (sectionId) => {
         <!-- Social -->
         <div>
           <h4 class="font-semibold text-white mb-4">Connect</h4>
-          <div class="flex gap-4">
+          <div class="flex flex-col gap-3 text-sm">
             <a
                 href="https://www.instagram.com/halalformosa/"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="hover:text-orange-400 transition"
             >
               📷 Instagram
             </a>
+
+            <a
+                href="https://www.tiktok.com/@halalformosa"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-orange-400 transition"
+            >
+              🎵 TikTok
+            </a>
           </div>
         </div>
+
 
       </div>
 
       <!-- Bottom Footer -->
       <div class="border-t border-slate-800 pt-8">
         <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-          <p class="text-sm">© 2025 Halal Formosa. All rights reserved.</p>
+          <div class="text-sm text-center md:text-left">
+            <p>© 2025 Halal Formosa. All rights reserved.</p>
+            <p class="text-xs text-slate-400 mt-1">
+              Powered by
+              <a
+                  href="https://www.yiqiconsultant.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:text-orange-400 transition underline-offset-2 hover:underline"
+              >
+                YiQi Global Consulting (藝啟文創行銷有限公司)
+              </a>
+            </p>
+
+          </div>
 
           <div class="flex gap-6 text-sm">
-            <router-link to="/privacy" class="hover:text-orange-400 transition">Privacy Policy</router-link>
-            <router-link to="/terms" class="hover:text-orange-400 transition">Terms of Service</router-link>
+            <router-link to="/privacy" class="hover:text-orange-400 transition">
+              Privacy Policy
+            </router-link>
+            <router-link to="/terms" class="hover:text-orange-400 transition">
+              Terms of Service
+            </router-link>
           </div>
         </div>
       </div>
+
 
     </div>
   </footer>

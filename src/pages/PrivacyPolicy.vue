@@ -8,9 +8,10 @@
       </h1>
 
       <p class="text-slate-600 mb-6 leading-relaxed">
-        This Privacy Policy ("Policy") explains how <strong>R Creative</strong> ("we", "our", or "us") handles
-        personal and non-personal information collected through the <strong>Halal Formosa</strong> mobile application
-        ("Service"). By using the Service, you agree to the collection, storage, and use of information in accordance
+        This Privacy Policy ("Policy") explains how <strong>YiQi Global Consulting (藝啟文創行銷有限公司)</strong>
+        ("we", "our", or "us") handles personal and non-personal information collected through the
+        <strong>Halal Formosa</strong> mobile application ("Service"), which it publishes and operates in Taiwan.
+        By using the Service, you agree to the collection, storage, and use of information in accordance
         with this Policy.
       </p>
 
@@ -29,7 +30,7 @@
 
       <p class="text-slate-500 italic mt-12 text-center">
         Effective Date: August 2025<br />
-        Last Updated: January 2026
+        Last Updated: February 2026
       </p>
 
 
@@ -108,7 +109,7 @@ const sections = [
   },
   {
     title: "Article 9 – Data Suspension and Misuse",
-    text: "Users who believe their personal data has been misused or improperly handled may contact the Halal Formosa team at support[@]halalformosa.com for review and assistance."
+    text: "Users who believe their personal data has been misused or improperly handled may contact the Halal Formosa team, operated by YiQi Global Consulting, at support[@]halalformosa.com for review and assistance."
   },
   {
     title: "Article 10 – Cookie and Local Storage",

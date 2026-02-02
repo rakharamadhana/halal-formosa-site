@@ -7,7 +7,8 @@
       </h1>
 
       <p class="text-slate-600 mb-6 leading-relaxed">
-        These Terms of Service (“Terms”) apply to the <strong>Halal Formosa</strong> mobile application.
+        These Terms of Service (“Terms”) apply to the <strong>Halal Formosa</strong> mobile application and related services (the “Service”).
+        The Service is published and operated by <strong>YiQi Global Consulting (藝啟文創行銷有限公司)</strong>.
         By using the Service, Users agree to be bound by these Terms.
       </p>
 
@@ -34,12 +35,12 @@
 
       <p class="text-slate-500 italic mt-12 text-center">
         Effective Date: August 2025<br />
-        Last Updated: January 2026
+        Last Updated: February 2026
       </p>
 
       <p class="text-slate-600 text-center mt-4">
         Service Name: <strong>Halal Formosa</strong><br/>
-        Provider: <strong>R Creative</strong>
+        Service Provider: <strong>YiQi Global Consulting (藝啟文創行銷有限公司)</strong>
       </p>
 
     </div>
@@ -65,11 +66,17 @@ const sections = [
       "<strong>Halal Formosa is not an official halal certification authority</strong> and does not issue halal certificates.",
       "All halal-related information is provided <strong>for reference purposes only</strong> and must be independently verified by users with manufacturers, halal certification bodies, or qualified Islamic authorities.",
       "Ingredient analysis may use <strong>OCR-based text recognition</strong>. Detection accuracy depends on camera quality, image clarity, lighting, and packaging design.",
-      "The Halal Formosa team will make reasonable and best-effort attempts to keep information up to date; however, users are advised to confirm information independently.",
+      "The Halal Formosa team, operated by YiQi Global Consulting, will make reasonable and best-effort attempts to keep information up to date; however, users are advised to confirm information independently.",
       "Location accuracy depends on Google Maps and device GPS.",
       "Service is provided as a <strong>voluntary community project</strong> without commercial guarantees."
     ]
   },
+
+  {
+    title: "Article 2A – Service Operator",
+    text: "Halal Formosa is a digital information platform operated by YiQi Global Consulting (藝啟文創行銷有限公司). The Service does not provide halal certification, religious rulings (fatwa), or official verification."
+  },
+
 
   {
     title: "Article 3 – Voluntary Support",
