@@ -1,9 +1,13 @@
 <template>
   <section class="py-16 bg-slate-50">
     <div class="max-w-6xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-6">
-        Google Play Reviews
+      <h2 class="text-4xl font-bold text-center mb-4">
+        Reviews from Google Play
       </h2>
+
+      <p class="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
+        Reviews from our Google Play (Android) Users who experience Halal Formosa in their lives
+      </p>
 
       <!-- Jotform widget container -->
       <div id="JFWebsiteWidget-019c1d5029f4711aa6bf99151fbfaea5a7b3"></div>
