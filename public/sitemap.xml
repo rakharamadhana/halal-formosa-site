@@ -25,5 +25,9 @@
         <loc>https://halalformosa.com/terms</loc>
         <priority>0.5</priority>
     </url>
+    <url>
+        <loc>https://halalformosa.com/faq</loc>
+        <priority>0.8</priority>
+    </url>
 
 </urlset>
