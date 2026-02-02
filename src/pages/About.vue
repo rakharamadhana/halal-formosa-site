@@ -182,10 +182,10 @@
       <div class="flex flex-col items-center gap-4">
         <!-- Image -->
         <img
+            v-if="zoomedMember?.photo"
             :src="zoomedMember.photo"
             :alt="zoomedMember.name"
-            class="max-w-[90vw] max-h-[70vh]
-             rounded-xl shadow-2xl"
+            class="max-w-[90vw] max-h-[70vh] rounded-xl shadow-2xl"
         />
 
         <!-- Name & Role -->
@@ -220,7 +220,7 @@ import { ref } from 'vue'
 type TeamMember = {
   name: string
   role: string
-  photo: string | null
+  photo?: string | null
   instagram?: string | null
   description?: string[]
   imageOffsetY?: number   // 👈 vertical offset in %
