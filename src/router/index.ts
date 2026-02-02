@@ -15,33 +15,65 @@ const router = createRouter({
             path: "/",
             component: Layout,
             children: [
-                { path: "", name: "Home", component: Home },
-                { path: "privacy", name: "Privacy", component: PrivacyPolicy },
-                { path: "terms", name: "Terms", component: TermsOfService },
-                { path: "about", name: "About", component: About },
-                { path: "contact", name: "Contact", component: Contact },
+                {
+                    path: "",
+                    name: "Home",
+                    component: Home,
+                    meta: {
+                        title: "Halal Formosa - Halal Map & Ingredient Scanner in Taiwan",
+                    },
+                },
+                {
+                    path: "about",
+                    name: "About",
+                    component: About,
+                    meta: {
+                        title: "About Halal Formosa - Muslim-Friendly Ecosystem in Taiwan",
+                    },
+                },
+                {
+                    path: "contact",
+                    name: "Contact",
+                    component: Contact,
+                    meta: {
+                        title: "Contact Halal Formosa - Get in Touch",
+                    },
+                },
+                {
+                    path: "privacy",
+                    name: "Privacy",
+                    component: PrivacyPolicy,
+                    meta: {
+                        title: "Privacy Policy - Halal Formosa",
+                    },
+                },
+                {
+                    path: "terms",
+                    name: "Terms",
+                    component: TermsOfService,
+                    meta: {
+                        title: "Terms of Service - Halal Formosa",
+                    },
+                },
             ],
         },
     ],
 
-    // Smooth + reliable scroll behavior
     scrollBehavior(to, _from, savedPosition) {
-        // Restore scroll when using browser forward/back
-        if (savedPosition) {
-            return savedPosition
-        }
-
-        // If navigating to a hash (#features), scroll smoothly
+        if (savedPosition) return savedPosition
         if (to.hash) {
-            return {
-                el: to.hash,
-                behavior: "smooth",
-            }
+            return { el: to.hash, behavior: "smooth" }
         }
-
-        // Default: scroll to top on every page navigation
         return { top: 0 }
     },
 })
+
+router.afterEach((to) => {
+    const defaultTitle =
+        "Halal Formosa - Halal Map & Ingredient Scanner in Taiwan"
+
+    document.title = (to.meta?.title as string) || defaultTitle
+})
+
 
 export default router
