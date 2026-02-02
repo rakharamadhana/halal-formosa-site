@@ -19,24 +19,45 @@
 
     <!-- Contact Card -->
     <div class="bg-white shadow-sm rounded-xl p-8 border border-slate-200">
-      <h2 class="text-2xl font-bold text-[#d97b1a] mb-4">Reach Us</h2>
+      <h2 class="text-2xl font-bold text-[#d97b1a] mb-6">
+        Reach Us
+      </h2>
 
-      <ul class="space-y-4 text-slate-700 mb-10">
-        <li>
-          📷 Instagram:
-          <a
-              href="https://www.instagram.com/halalformosa/"
-              target="_blank"
-              class="text-[#d97b1a] hover:underline"
-          >
-            @halalformosa
-          </a>
-        </li>
-      </ul>
+      <!-- FOLLOW BUTTONS -->
+      <div class="flex justify-start gap-4 mb-10 flex-wrap">
+        <!-- Instagram -->
+        <a
+            href="https://www.instagram.com/halalformosa"
+            target="_blank"
+            rel="noopener"
+            class="inline-flex items-center gap-2 px-6 py-3
+           rounded-full bg-gradient-to-r from-pink-500 to-orange-400
+           text-white font-semibold hover:opacity-90 transition"
+        >
+          <ion-icon name="logo-instagram" class="text-xl"></ion-icon>
+          Instagram
+        </a>
 
-      <!-- Contact Form (FormSubmit.co) -->
+        <!-- TikTok -->
+        <a
+            href="https://www.tiktok.com/@halal_formosa"
+            target="_blank"
+            rel="noopener"
+            class="inline-flex items-center gap-2 px-6 py-3
+           rounded-full bg-black
+           text-white font-semibold hover:opacity-90 transition"
+        >
+          <ion-icon name="logo-tiktok" class="text-xl"></ion-icon>
+          TikTok
+        </a>
+      </div>
+
+
+      <!-- Contact Form -->
       <div>
-        <h3 class="text-xl font-bold text-slate-900 mb-4">Send a Message</h3>
+        <h3 class="text-xl font-bold text-slate-900 mb-4">
+          Send a Message
+        </h3>
 
         <form
             class="space-y-4"
@@ -90,12 +111,8 @@
 </template>
 
 <script setup lang="ts">
-import { useRoute } from "vue-router"
+import { useRoute } from 'vue-router'
 
 const route = useRoute()
-
-// For dynamic redirect URL
 const origin = window.location.origin
 </script>
-
-<style scoped></style>
