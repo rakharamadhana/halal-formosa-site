@@ -72,13 +72,25 @@ const goToHomeSection = async (sectionId) => {
           <h4 class="font-semibold text-white mb-4">Company</h4>
           <ul class="space-y-2 text-sm">
             <li>
-              <router-link to="/about" class="hover:text-orange-400 transition">About</router-link>
+              <router-link to="/about" class="hover:text-orange-400 transition">
+                About
+              </router-link>
             </li>
+
             <li>
-              <router-link to="/contact" class="hover:text-orange-400 transition">Contact</router-link>
+              <router-link to="/faq" class="hover:text-orange-400 transition">
+                FAQ
+              </router-link>
+            </li>
+
+            <li>
+              <router-link to="/contact" class="hover:text-orange-400 transition">
+                Contact
+              </router-link>
             </li>
           </ul>
         </div>
+
 
         <!-- Social -->
         <div>

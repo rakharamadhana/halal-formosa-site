@@ -36,7 +36,14 @@ const goHome = () => router.push("/")
         <button @click="goToHomeSection('pricing')" class="text-slate-600 hover:text-[#d97b1a] transition">Pricing</button>
         <button @click="goToHomeSection('testimonials')" class="text-slate-600 hover:text-[#d97b1a] transition">Testimonials</button>
 
+
         <router-link to="/about" class="text-slate-600 hover:text-[#d97b1a] transition">About</router-link>
+        <router-link
+            to="/faq"
+            class="text-slate-600 hover:text-[#d97b1a] transition"
+        >
+          FAQ
+        </router-link>
         <router-link to="/contact" class="text-slate-600 hover:text-[#d97b1a] transition">Contact</router-link>
       </div>
 
@@ -88,9 +95,18 @@ const goHome = () => router.push("/")
           About
         </router-link>
 
+        <router-link
+            to="/faq"
+            @click="mobileOpen=false"
+            class="block w-full text-left text-slate-700 font-medium py-2 hover:text-[#d97b1a] transition"
+        >
+          FAQ
+        </router-link>
+
         <router-link to="/contact" @click="mobileOpen=false" class="block w-full text-left text-slate-700 font-medium py-2 hover:text-[#d97b1a] transition">
           Contact
         </router-link>
+
 
         <button
             @click="goToHomeSection('download'); mobileOpen=false"

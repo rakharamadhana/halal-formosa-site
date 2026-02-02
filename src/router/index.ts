@@ -6,6 +6,7 @@ import PrivacyPolicy from "@/pages/PrivacyPolicy.vue"
 import TermsOfService from "@/pages/TermsOfService.vue"
 import About from "@/pages/About.vue"
 import Contact from "@/pages/Contact.vue"
+import FAQ from "@/pages/FAQ.vue";
 
 const router = createRouter({
     history: createWebHistory(),
@@ -45,6 +46,17 @@ const router = createRouter({
                             "Contact Halal Formosa for inquiries, collaborations, partnerships, or community support related to halal living in Taiwan."
                     },
                 },
+                {
+                    path: "faq",
+                    name: "FAQ",
+                    component: FAQ,
+                    meta: {
+                        title: "FAQ - Halal Formosa",
+                        description:
+                            "Frequently asked questions about Halal Formosa, including halal products, halal restaurants, prayer places, and community contributions in Taiwan."
+                    },
+                },
+
                 {
                     path: "privacy",
                     name: "Privacy",
