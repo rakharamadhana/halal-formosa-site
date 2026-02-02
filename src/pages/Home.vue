@@ -46,6 +46,11 @@
       <TestimonialsSection />
     </div>
 
+    <!-- GOOGLE PLAY REVIEWS -->
+    <div data-aos="fade-up" data-aos-delay="400">
+      <GooglePlayReviews />
+    </div>
+
     <!-- INSTAGRAM FEED -->
     <div data-aos="fade-up" data-aos-delay="400">
       <InstagramFeed />
@@ -74,6 +79,7 @@ import TestimonialsSection from "@/components/Testimonials.vue"
 import PricingSection from "@/components/Pricing.vue"
 import FinalCTASection from "@/components/FinalCTA.vue"
 import InstagramFeed from "@/components/InstagramFeed.vue";
+import GooglePlayReviews from "@/components/GooglePlayReviews.vue";
 </script>
 
 <style scoped>
