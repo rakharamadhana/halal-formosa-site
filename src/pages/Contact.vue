@@ -66,15 +66,18 @@
           <strong>Office Address:</strong><br />
 
           YiQi Global Consulting Office<br />
+
           <a
               href="https://maps.app.goo.gl/Nh7HTgh2soifnXtv7"
               target="_blank"
               rel="noopener noreferrer"
               class="hover:text-[#d97b1a] transition underline-offset-2 hover:underline"
           >
-            114064 臺北市內湖區洲子街12號2樓 (R.O.C.)
+            114064 臺北市內湖區洲子街12號2樓 (R.O.C.)<br />
+            2F, No. 12, Zhouzi St., Neihu District, Taipei City 114, Taiwan
           </a>
         </p>
+
 
 
         <p class="text-slate-700 leading-relaxed mt-2">
