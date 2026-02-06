@@ -107,27 +107,37 @@
         Our Team
       </h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         <div
             v-for="member in team"
             :key="member.name"
             class="text-center"
         >
           <!-- Photo -->
-          <img
+          <div
               v-if="member.photo"
-              :src="member.photo"
-              :alt="member.name"
               @click="openZoom(member)"
               class="w-48 h-48 mx-auto rounded-full
-         border-4 border-[#d97b1a] shadow-md mb-5
-         cursor-zoom-in hover:opacity-90 transition"
-              :style="{
-    objectFit: 'cover',
-    objectPosition: `center ${member.imageOffsetY ?? 50}%`,
-    transform: `scale(${member.imageScale ?? 1})`
-  }"
-          />
+         border-4 border-[#d97b1a]
+         shadow-md mb-5
+         overflow-hidden
+         cursor-zoom-in"
+          >
+            <img
+                :src="member.photo"
+                :alt="member.name"
+                class="w-full h-full object-cover transition-transform"
+                :style="{
+  transform: `
+    scale(${member.imageScale ?? 1.3})
+    translateX(${member.imageOffsetX ?? 0}px)
+  `,
+  objectPosition: `center ${member.imageOffsetY ?? 45}%`
+}"
+
+            />
+          </div>
+
 
 
           <div
@@ -145,6 +155,7 @@
           <h3 class="text-xl font-semibold text-slate-900">
             {{ member.name }}
           </h3>
+
           <p class="text-slate-500 text-sm mb-3">
             {{ member.role }}
           </p>
@@ -156,18 +167,20 @@
             </li>
           </ul>
 
-
-
           <!-- Instagram -->
           <a
               v-if="member.instagram"
               :href="`https://instagram.com/${member.instagram}`"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-block mt-4 text-sm text-[#d97b1a] font-medium hover:underline"
+              class="inline-flex items-center gap-2 mt-4 text-sm text-[#d97b1a] font-medium hover:underline"
           >
-            @{{ member.instagram }}
+            <ion-icon name="logo-instagram" />
+            <span>{{ member.instagram }}</span>
           </a>
+
+
+
         </div>
       </div>
     </div>
@@ -187,6 +200,7 @@
             :alt="zoomedMember.name"
             class="max-w-[90vw] max-h-[70vh] rounded-xl shadow-2xl"
         />
+
 
         <!-- Name & Role -->
         <div class="text-center text-white">
@@ -223,9 +237,12 @@ type TeamMember = {
   photo?: string | null
   instagram?: string | null
   description?: string[]
-  imageOffsetY?: number   // 👈 vertical offset in %
-  imageScale?: number     // 👈 zoom scale (default 1)
+  imageOffsetX?: number   // 👈 NEW (px)
+  imageOffsetY?: number   // (%)
+  imageScale?: number
 }
+
+
 
 
 const zoomedMember = ref<TeamMember | null>(null)
@@ -244,10 +261,11 @@ const team: TeamMember[] = [
   {
     name: 'Rakha Ramadhana A.B.',
     role: 'Founder',
-    photo: '/founder-rakha.jpg',
+    photo: '/team/founder-rakha.jpg',
     instagram: 'rakharamadhana',
-    imageOffsetY: 30,
-    imageScale: 1,
+    imageScale: 2,
+    imageOffsetX: -10,
+    imageOffsetY: 20,
     description: [
       'Lead engineer and architect of the Halal Formosa platform',
       'Responsible for development and maintenance of the iOS, Android, and web applications',
@@ -257,26 +275,30 @@ const team: TeamMember[] = [
   {
     name: 'Sherlis Oktaviani',
     role: 'Co-Founder',
-    photo: '/co-founder-sherlis.jpg',
+    photo: '/team/co-founder-sherlis.jpg',
     instagram: 'sherlisoktaviani',
-    imageOffsetY: 5,   // 👈 lowers the photo
-    imageScale: 1,   // 👈 slight zoom
+    imageScale: 1.25,
+    imageOffsetX: 1,
+    imageOffsetY: -5,
     description: [
       'Leads social media actualization and digital presence',
       'Creates and manages content such as reels, videos, and stories',
       'Develops marketing strategies and community outreach initiatives',
     ],
   },
-  // {
-  //   name: 'Paul Yang',
-  //   role: 'Publisher Partnership Liaison',
-  //   photo: null,
-  //   description: [
-  //     'Serves as the primary liaison between Halal Formosa and YiQi Global Consulting',
-  //     'Facilitates communication, coordination, and documentation',
-  //     'Supports alignment on publishing, operational, and regulatory matters',
-  //   ],
-  // },
+  {
+    name: 'Paul Yang',
+    role: 'Marketing Director',
+    photo: '/team/marketing-director-paul.jpg',
+    imageScale: 1.05,
+    imageOffsetX: 4,
+    imageOffsetY: -8,
+    description: [
+      'Leads marketing strategy, partnerships, and external relations for Halal Formosa',
+      'Responsible for resource mobilization, funding opportunities, and merchant cooperation',
+      'Engages with Taiwan government bodies and industry stakeholders to support platform growth',
+    ],
+  }
 ]
 
 
