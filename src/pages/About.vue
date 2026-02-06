@@ -331,7 +331,7 @@ const timeline = [
   },
 
   {
-    date: '29 January 2026',
+    date: '27 January 2026',
     description:
         'Halal Formosa entered into a publishing and operational partnership with',
     link: {
